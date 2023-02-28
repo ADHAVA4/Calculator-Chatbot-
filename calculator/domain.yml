@@ -6,7 +6,7 @@ intents:
   - subtract
   - multiply
   - divide
-  
+  - goodbye
 responses:
   utter_greet:
     - text: "Hello! I'm a calculator bot. How can I help you today?"
