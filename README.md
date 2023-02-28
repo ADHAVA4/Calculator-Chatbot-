@@ -10,7 +10,7 @@ Calculator Chatbot created using RASA<br><br>
 <li>User gives the input
 <li>Bot gives the answer
 <li>This cycle is repeated till user exits the bot
-
+<li>Greetings(end)
 
 There are bugs in the code because of which the calculator bot is accepting input infinitely and not moving ahead to perform calculations.<br><br>
 <img src="/calculator/chatbot_screenshot1.png">
