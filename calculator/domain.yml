@@ -8,6 +8,8 @@ intents:
   - divide
   
 responses:
+utter_greet:
+    - text: "Hello! I'm a calculator bot. How can I help you today?"
   utter_ask_num1:
     - text: "What is the first number?"
   utter_ask_num2:
@@ -16,6 +18,7 @@ responses:
     - text: "The {operation} of {num1} and {num2} is {result}."
 
 actions:
+ - utter_greet
  - utter_ask_num1
  - utter_ask_num2
  - action_add_numbers
