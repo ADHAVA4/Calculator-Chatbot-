@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+  # Add numbers
+  - story: add numbers
+    steps:
+    - intent: add
+    - action: utter_ask_num1
+    - slot_was_set:
+        - num1: 2.0
+    - action: utter_ask_num2
+    - slot_was_set:
+        - num2: 3.0
+    - action: action_add_numbers
+
+  # Subtract numbers
+  - story: subtract numbers
+    steps:
+    - intent: subtract
+    - action: utter_ask_num1
+    - slot_was_set:
+        - num1: 5.0
+    - action: utter_ask_num2
+    - slot_was_set:
+        - num2: 2.0
+    - action: action_subtract_numbers
+
+  # Multiply numbers
+  - story: multiply numbers
+    steps:
+    - intent: multiply
+    - action: utter_ask_num1
+    - slot_was_set:
+        - num1: 4.0
+    - action: utter_ask_num2
+    - slot_was_set:
+        - num2: 6.0
+    - action: action_multiply_numbers

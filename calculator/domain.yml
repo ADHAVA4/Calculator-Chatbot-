@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - add
+  - subtract
+  - multiply
+
+responses:
+  utter_ask_num1:
+    - text: "What is the first number?"
+  utter_ask_num2:
+    - text: "What is the second number?"
+  utter_result:
+    - text: "The {operation} of {num1} and {num2} is {result}."
+
+actions:
+ - utter_ask_num1
+ - utter_ask_num2
+ - action_add_numbers
+ - action_subtract_numbers
+ - action_multiply_numbers
+
+entities:
+  - num1
+  - num2
+
+slots:
+  num1:
+    type: float
+    mappings:
+    - type: from_entity
+      entity: num1
+  num2:
+    type: float
+    mappings:
+    - type: from_entity
+      entity: num2
