@@ -1,10 +1,10 @@
 version: "3.1"
 rules:
 
-  - rule: Greet user at the beginning
-    steps:
-    - intent: greet
-    - action: utter_greet
+- rule: Greet user at the beginning
+  steps:
+  - intent: greet
+  - action: utter_greet
 
 - rule: Add numbers
   steps:
@@ -51,6 +51,6 @@ rules:
   - action: action_divide_numbers
 
 - rule: Say goodbye
-    steps:
-    - intent: goodbye
-    - action: utter_goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
