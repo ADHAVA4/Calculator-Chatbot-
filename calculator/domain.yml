@@ -4,7 +4,8 @@ intents:
   - add
   - subtract
   - multiply
-
+  - divide
+  
 responses:
   utter_ask_num1:
     - text: "What is the first number?"
@@ -19,6 +20,7 @@ actions:
  - action_add_numbers
  - action_subtract_numbers
  - action_multiply_numbers
+ -action_divide_numbers
 
 entities:
   - num1
