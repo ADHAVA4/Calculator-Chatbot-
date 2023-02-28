@@ -9,6 +9,14 @@ nlu:
     - hey there
     - hi bot
     - hello chatbot
+    
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you soon
+    - farewell
 
 - intent: add
   examples: |
