@@ -1,0 +1,17 @@
+version: "3.1"
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a nice day."
+
+  utter_ask_num1:
+  - text: "What is the first number?"
+
+  utter_ask_num2:
+  - text: "What is the second number?"
+
+  utter_result:
+  - text: "The {operation} of {num1} and {num2} is {result}."
