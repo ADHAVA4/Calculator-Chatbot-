@@ -22,3 +22,9 @@ nlu:
     - multiplication
     - times
 
+- intent: divide
+  examples: |
+    - divide
+    - divide numbers
+    - division
+    - by
