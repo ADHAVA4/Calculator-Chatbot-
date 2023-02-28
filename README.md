@@ -1,7 +1,9 @@
 # Calculator-Chatbot-
 Calculator Chatbot created using RASA<br><br>
 <b><h3>Expected Workflow:</h3>
-<ol><li>User gives the input for the operations to perform.Eg: Add/subtract or anything related.
+<ol>
+<li>Greetings 
+<li>User gives the input for the operations to perform.Eg: Add/subtract or anything related.
 <li>Bot asks for the input for first number 
 <li>User gives the input
 <li>Bot asks for the input for second number
