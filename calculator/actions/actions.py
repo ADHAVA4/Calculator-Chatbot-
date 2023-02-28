@@ -52,3 +52,21 @@ class ActionMultiplyNumbers(Action):
         dispatcher.utter_message(template="utter_result", operation="product", num1=num1, num2=num2, result=result)
         
         return []
+   
+class ActionDivideNumbers(Action):
+
+    def name(self) -> Text:
+        return "action_divide_numbers"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        num1 = tracker.get_slot("num1")
+        num2 = tracker.get_slot("num2")
+        result = num1 / num2
+        
+        dispatcher.utter_message(template="utter_result", operation="quotient", num1=num1, num2=num2, result=result)
+        
+        return []
+
