@@ -91,3 +91,15 @@ class ActionDivideNumbers(Action):
         
         return []
 
+ class ActionGoodbye(Action):
+
+    def name(self) -> Text:
+        return "action_goodbye"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        dispatcher.utter_message(template="utter_goodbye")
+        
+        return []
