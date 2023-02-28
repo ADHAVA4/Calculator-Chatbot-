@@ -37,3 +37,15 @@ stories:
     - slot_was_set:
         - num2: 6.0
     - action: action_multiply_numbers
+    
+ # Divide numbers
+  - story: divide numbers
+    steps:
+    - intent: divide
+    - action: utter_ask_num1
+    - slot_was_set:
+        - num1: 4.0
+    - action: utter_ask_num2
+    - slot_was_set:
+        - num2: 6.0
+    - action: action_divide_numbers
