@@ -49,3 +49,8 @@ rules:
   - slot_was_set:
       - num2: 6.0
   - action: action_divide_numbers
+
+- rule: Say goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
